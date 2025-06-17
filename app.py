@@ -9,7 +9,9 @@ Original file is located at
 try:
     import joblib
 except Exception as e:
+    import streamlit as st
     st.error(f"joblib import failed: {e}")
+    st.stop()  # Stop execution if joblib fails to load
     
 import streamlit as st
 import pandas as pd
