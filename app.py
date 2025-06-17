@@ -19,7 +19,7 @@ import numpy as np
 import joblib
 
 # Load saved model, scaler, and expected columns
-model = joblib.load("logistic_model.pkl")
+model = joblib.load("random_forest_model.pkl")
 scaler = joblib.load("scaler.pkl")
 model_columns = joblib.load("model_columns.pkl")
 
@@ -104,7 +104,6 @@ input_encoded = input_encoded[model_columns]
 input_scaled = scaler.transform(input_encoded)
 
 # ----------- Predict -----------
-
 if st.button("Predict Subscription"):
     pred = model.predict(input_scaled)[0]
     proba = model.predict_proba(input_scaled)[0][1]
