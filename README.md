@@ -20,21 +20,14 @@ project-root/
 
 │
 
-├── app.py # Streamlit app script
-
-├── preprocessing.py # Data preprocessing script
-
-├── modeling.py # Model training & evaluation
-
-├── random_forest_model.pkl # Trained model (joblib serialized)
-
-├── scaler.pkl # Scaler used on numerical inputs
-
-├── model_columns.pkl # Model column structure for input formatting
-
-├── requirements.txt # Python dependencies for deployment
-
-└── README.md # Project summary and documentation
+app.py # Streamlit app script
+preprocessing.py # Data preprocessing script
+modeling.py # Model training & evaluation
+random_forest_model.pkl # Trained model (joblib serialized)
+scaler.pkl # Scaler used on numerical inputs
+model_columns.pkl # Model column structure for input formatting
+requirements.txt # Python dependencies for deployment
+README.md # Project summary and documentation
 
 ### Key Steps
 #### 1. Exploratory Data Analysis (EDA)
